@@ -1,3 +1,6 @@
+# FoSCI's Generated Output Files
+benchmarks/FoSCI/*_outputs*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
