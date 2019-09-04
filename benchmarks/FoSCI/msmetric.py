@@ -7,7 +7,6 @@ getFitnessForPopulation(population, fitness_method)
 getFitness(fitnessMethod, indiv)
 '''
 
-'''
 #inside connections / n*(n-1),  intra-connections in bunch paper.
 def getFitnessCallCohNoWei(indiv, CLASSFINALDEPDict):
     valueList = list() #the metric for each set (service candidate)
@@ -81,7 +80,6 @@ def getFitnessConCoupNoWei(indiv, CLASSFINALDEPDict):
                         connections += 1
             valueList.append( connections / float(maximumConnections))
     return sum(valueList) / float(len(valueList))
-'''
 
 # aservice candidate = the list of atoms
 def getClasssetForCandidate(candidate):
@@ -106,8 +104,6 @@ def computeCallcohForCandidate(candidate):
     classset = getClasssetForCandidate(candidate)
     allconnections = len(classset) * len(classset)
     hasconnections = 0
-    print("CLASS FINAL DEPENDENCY DICTIONARY");
-    print(CLASSFINALDEPDict);
     for class1 in classset:
         for class2 in classset:
             if class1 != class2 and int(CLASSFINALDEPDict[class1][class2].calldep)!=0:

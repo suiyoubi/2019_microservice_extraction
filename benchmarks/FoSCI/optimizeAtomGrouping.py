@@ -177,6 +177,7 @@ if __name__ == "__main__":
         print("iteration: ", i)
         #[pop_list, knee_point, knee_fit] = nsga_process()
         pop_list = nsga_process()
+        print("==============================================")
         k = 0
         for each in pop_list:
             #filename = project + "_fome_" + str(candidate_number) + "_iter_" + str(i) + "_k" + str(k) + ".csv"
