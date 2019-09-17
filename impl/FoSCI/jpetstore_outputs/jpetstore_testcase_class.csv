@@ -1,0 +1,16 @@
+0,org.mybatis.jpetstore.web.actions.CatalogActionBean
+1,org.mybatis.jpetstore.service.CatalogService
+2,org.mybatis.jpetstore.domain.Product
+3,org.mybatis.jpetstore.domain.Category
+4,org.mybatis.jpetstore.domain.Item
+5,org.mybatis.jpetstore.web.actions.AccountActionBean
+6,org.mybatis.jpetstore.domain.Account
+7,org.mybatis.jpetstore.domain.Cart
+8,org.mybatis.jpetstore.domain.CartItem
+9,org.mybatis.jpetstore.service.AccountService
+10,org.mybatis.jpetstore.web.actions.OrderActionBean
+11,org.mybatis.jpetstore.service.OrderService
+12,org.mybatis.jpetstore.domain.Sequence
+13,org.mybatis.jpetstore.domain.Order
+14,org.mybatis.jpetstore.domain.LineItem
+15,org.mybatis.jpetstore.web.actions.CartActionBean

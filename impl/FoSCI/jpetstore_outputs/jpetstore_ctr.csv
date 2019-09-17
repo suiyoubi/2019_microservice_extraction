@@ -1,0 +1,17 @@
+classId,className,groupId,groupLen,groupDetail
+0,org.mybatis.jpetstore.web.actions.CatalogActionBean,0,4,0;1;2;9
+1,org.mybatis.jpetstore.service.CatalogService,1,6,0;1;2;5;9;10
+2,org.mybatis.jpetstore.domain.Product,2,6,0;1;2;9;10;13
+3,org.mybatis.jpetstore.domain.Category,3,1,0
+4,org.mybatis.jpetstore.domain.Item,4,8,2;3;7;8;9;10;11;13
+5,org.mybatis.jpetstore.web.actions.AccountActionBean,5,9,3;4;5;6;10;11;12;13;14
+6,org.mybatis.jpetstore.domain.Account,5,9,3;4;5;6;10;11;12;13;14
+7,org.mybatis.jpetstore.domain.Cart,6,6,3;6;7;8;10;11
+8,org.mybatis.jpetstore.domain.CartItem,7,5,3;7;8;10;11
+9,org.mybatis.jpetstore.service.AccountService,8,1,5
+10,org.mybatis.jpetstore.web.actions.OrderActionBean,9,4,6;11;13;14
+13,org.mybatis.jpetstore.domain.Order,9,4,6;11;13;14
+11,org.mybatis.jpetstore.service.OrderService,10,3,6;13;14
+12,org.mybatis.jpetstore.domain.Sequence,11,1,6
+14,org.mybatis.jpetstore.domain.LineItem,12,3,6;11;13
+15,org.mybatis.jpetstore.web.actions.CartActionBean,13,5,6;7;8;10;11
