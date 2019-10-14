@@ -1,6 +1,5 @@
-% template from ACM (or IEEE) and conference info
-\documentclass[sigconf,review, anonymous]{acmart}
-\acmConference[ISSTA 2018]{ACM SIGSOFT International Symposium on Software Testing and Analysis}{16-22 July, 2018}{Amsterdam, The Netherlands}
+\documentclass[10pt,conference]{IEEEtran}
+%\documentclass[sigconf,review, anonymous]{acmart}
 
 \input{macro}
 
@@ -9,7 +8,7 @@
 
 \begin{document}
 
-\title{Paper title}
+\title{An Analysis of Microservice Extraction Techniques}
 
 
 %%%%%%% author template (one per author)
@@ -33,28 +32,22 @@
 %\startPage{}
 
 
-\keywords{}
+%\keywords{}
  
 %\setcopyright{}
 %\copyrightyear{}
 
 % in ACM, abstract has to precede the \maketitle command
-\begin{abstract}
-(Abstract)
-\end{abstract}
-
 
 
 \maketitle
-
+\input{abstract}
 \input{intro}
 \input{background}
-\input{definitions}
+\input{eval}
 \input{results}
-\input{discussions}
-\input{limitations}
-\input{relatedwork}
-
+\input{discussion}
+\input{related}
 \input{conclusion}
 
 
@@ -63,7 +56,8 @@
 
 
 \balance
-\bibliographystyle{ACM-Reference-Format}
+%\bibliographystyle{ACM-Reference-Format}
+\bibliographystyle{IEEEtranS}
 \bibliography{00}
 
 
