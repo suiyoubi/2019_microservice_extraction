@@ -186,7 +186,6 @@ nb-configuration.xml
 *.dvi
 *.xdv
 *-converted-to.*
-paper.pdf
 # these rules might exclude image files for figures etc.
 # *.ps
 # *.eps
