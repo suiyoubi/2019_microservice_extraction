@@ -1,0 +1,11 @@
+<aspectj>
+  <weaver>
+    <include within="org.javaee7.wildfly.samples.everest..*"/>
+    <include within="javax..*"/>
+    <include within="javax.faces..*"/>
+  </weaver>
+  <aspects>
+    <!--aspect name="kieker.monitoring.probe.aspectj.opoerationExecution.OperationExecutionAspectFull"/-->
+    <aspect name="kieker.monitoring.probe.aspectj.operationExecution.OperationExecutionAspectFull"/>
+  </aspects>
+</aspectj>
