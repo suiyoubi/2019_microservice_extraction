@@ -1,0 +1,12 @@
+0,org.javaee7.wildfly.samples.everest.uzer.UzerBean
+1,org.javaee7.wildfly.samples.everest.uzer.Uzer
+2,org.javaee7.wildfly.samples.everest.uzer.UzerItem
+3,org.javaee7.wildfly.samples.everest.catalog.CatalogItem
+4,org.javaee7.wildfly.samples.everest.checkout.Order
+5,org.javaee7.wildfly.samples.everest.catalog.CatalogItemType
+6,org.javaee7.wildfly.samples.everest.checkout.OrderItem
+7,org.javaee7.wildfly.samples.everest.catalog.CatalogItemBean
+8,org.javaee7.wildfly.samples.everest.cart.Cart
+9,org.javaee7.wildfly.samples.everest.cart.CartItem
+10,org.javaee7.wildfly.samples.everest.checkout.Shipping
+11,org.javaee7.wildfly.samples.everest.checkout.OrderBean

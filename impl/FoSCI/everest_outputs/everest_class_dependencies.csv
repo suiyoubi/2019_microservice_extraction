@@ -1,0 +1,14 @@
+org.javaee7.wildfly.samples.everest.checkout.Shipping,org.javaee7.wildfly.samples.everest.uzer.Uzer,7
+org.javaee7.wildfly.samples.everest.checkout.Shipping,org.javaee7.wildfly.samples.everest.uzer.UzerItem,8
+org.javaee7.wildfly.samples.everest.uzer.UzerBean,org.javaee7.wildfly.samples.everest.checkout.OrderItem,1
+org.javaee7.wildfly.samples.everest.uzer.UzerBean,org.javaee7.wildfly.samples.everest.checkout.Order,1
+org.javaee7.wildfly.samples.everest.uzer.UzerBean,org.javaee7.wildfly.samples.everest.uzer.UzerItem,10
+org.javaee7.wildfly.samples.everest.uzer.UzerBean,org.javaee7.wildfly.samples.everest.catalog.CatalogItem,1
+org.javaee7.wildfly.samples.everest.uzer.UzerBean,org.javaee7.wildfly.samples.everest.uzer.Uzer,13
+org.javaee7.wildfly.samples.everest.uzer.UzerBean,org.javaee7.wildfly.samples.everest.catalog.CatalogItemType,1
+org.javaee7.wildfly.samples.everest.checkout.OrderBean,org.javaee7.wildfly.samples.everest.checkout.OrderItem,1
+org.javaee7.wildfly.samples.everest.checkout.OrderBean,org.javaee7.wildfly.samples.everest.cart.Cart,2
+org.javaee7.wildfly.samples.everest.checkout.OrderBean,org.javaee7.wildfly.samples.everest.checkout.Order,2
+org.javaee7.wildfly.samples.everest.checkout.OrderBean,org.javaee7.wildfly.samples.everest.cart.CartItem,2
+org.javaee7.wildfly.samples.everest.cart.Cart,org.javaee7.wildfly.samples.everest.cart.CartItem,3
+org.javaee7.wildfly.samples.everest.catalog.CatalogItemBean,org.javaee7.wildfly.samples.everest.catalog.CatalogItem,1

@@ -1,0 +1,8 @@
+net.jforum.JForum
+net.jforum.util.preferences.SystemGlobals
+net.jforum.util.preferences.VariableExpander
+net.jforum.JForumExecutionContext
+net.jforum.context.web.WebResponseContext
+net.jforum.context.JForumContext
+net.jforum.DBConnection
+net.jforum.SimpleConnection

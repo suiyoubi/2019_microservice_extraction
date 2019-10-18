@@ -1,0 +1,13 @@
+classid,classname,groupId,trace,grouptrace
+0,org.javaee7.wildfly.samples.everest.uzer.UzerBean,0,0,1;0;3;5
+1,org.javaee7.wildfly.samples.everest.catalog.CatalogItemType,0,0,1;0;3;5
+5,org.javaee7.wildfly.samples.everest.checkout.Order,0,0;5,1;0;3;5
+6,org.javaee7.wildfly.samples.everest.checkout.OrderItem,0,0;5,1;0;3;5
+2,org.javaee7.wildfly.samples.everest.uzer.Uzer,0,0;3,1;0;3;5
+3,org.javaee7.wildfly.samples.everest.uzer.UzerItem,0,0;3,1;0;3;5
+4,org.javaee7.wildfly.samples.everest.catalog.CatalogItem,0,0;1,1;0;3;5
+10,org.javaee7.wildfly.samples.everest.checkout.Shipping,0,3,1;0;3;5
+7,org.javaee7.wildfly.samples.everest.catalog.CatalogItemBean,1,1;4,1;4
+8,org.javaee7.wildfly.samples.everest.cart.Cart,2,2;5,2;5
+9,org.javaee7.wildfly.samples.everest.cart.CartItem,2,2;5,2;5
+11,org.javaee7.wildfly.samples.everest.checkout.OrderBean,2,5,2;5

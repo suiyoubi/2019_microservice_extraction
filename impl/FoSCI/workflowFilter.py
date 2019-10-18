@@ -21,7 +21,7 @@ PART2Dict=dict()  #[classID]
 
 
 #filterTrace, filter the trace whose first method is 'service', then this trace is our focuse
-FILTER_TRACE_NAME = "net.jforum.JForum.service"
+FILTER_TRACE_NAME = "org.mybatis.jpetstore.service"
 
 PART1_END_METHODNAME = "net.jforum.Command.<init>()"
 #= "net.jforum.context.web.WebRequestContext.getAction"

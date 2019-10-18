@@ -13,14 +13,14 @@ class GLOBAL_VAR_OBJECT:
     CLASSFINALDEPDict = dict()
 
     #the parameter of the algorithm
-    POP_SIZE = 40
-    PARTITION_K = 10
-    PARENT_M = 14
+    POP_SIZE = 20
+    PARTITION_K = 4 # number of service candidates
+    PARENT_M = 4
     FITNESS_METHOD_LIST = ["call coh without weight","call coup without weight","concern coh without weight","concern coup without weight"]
     CROSSOVER_OPERATOR = "1PNC"
     MUTATION_PROBABILITY = 0.2  #0.01-0.2
     MUTATION_OPERATOR = "random"
-    MAX_ITERATION_LOOP = 100
+    MAX_ITERATION_LOOP = 200 # previous: 100
     CONTINUE_BEST_LOOP  = 50
     REPEAT_TIMES = 1
     CURRENT_CONTINUE_BEST_LOOP = 0

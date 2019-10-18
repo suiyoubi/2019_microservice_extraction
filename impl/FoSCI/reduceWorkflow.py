@@ -6,10 +6,16 @@ testcase_name is the service_method name like XXXAction.func1()
 import sys
 import csv
 
-TESTCASE_PACKAGE_NAME = 'net.jforum.view'
+#TESTCASE_PACKAGE_NAME = 'net.jforum.view'
 #TESTCASE_PACKAGE_NAME = 'org.mybatis.jpetstore.web.actions'
+TESTCASE_PACKAGE_NAME = 'javax.faces.event.ActionEvent'
 #iNotDel aand reduceworklow function need to be care
 
+def isOperationMethod(callStackPos):
+    if callStackPos == '0':
+        return True
+    else:
+        return False
 
 
 def isIncluded(className, TESTCASE_PACKAGE_NAME):
@@ -19,7 +25,7 @@ def isIncluded(className, TESTCASE_PACKAGE_NAME):
         return False
 
 
-def isNotDel(methodName, className, TESTCASE_PACKAGE_NAME):
+def isNotDel(methodName, className, TESTCASE_PACKAGE_NAME, order):
     filter_list = list()
     filter_list.append('BookmarkAction.process')
     filter_list.append('InstallAction.process')
@@ -32,22 +38,21 @@ def isNotDel(methodName, className, TESTCASE_PACKAGE_NAME):
             flag = False
             break
     #OPTION:
-    if methodName.endswith('<init>') == False and ('class$' not in methodName)  and isIncluded(className, TESTCASE_PACKAGE_NAME) and flag == True:
+    # ORIGINAL: if methodName.endswith('<init>') == False and ('class$' not in methodName)  and isIncluded(className, TESTCASE_PACKAGE_NAME) and flag == True:
+    if methodName.endswith('<init>') == False and ('class$' not in methodName)  and isOperationMethod(order) and flag == True:
         return True
     else:
         return False
 
 
-'''
-judge this methodname 'view.method()' can stand for the testname name or not
-beacause BookmarkAction.process()  InstallAction.process() are total entry, so they cannot be the testcasename
-def isNotDel(methodName, className):
-    #OPTION:
-    if methodName.endswith('<init>') == False and ('class$' not in methodName)  and isIncluded(className):
-        return True
-    else:
-        return False
-'''
+#judge this methodname 'view.method()' can stand for the testname name or not
+#beacause BookmarkAction.process()  InstallAction.process() are total entry, so they cannot be the testcasename
+#def isNotDel(methodName, className):
+#    #OPTION:
+#    if methodName.endswith('<init>') == False and ('class$' not in methodName)  and isIncluded(className):
+#        return True
+#    else:
+#        return False
 
 #resList[traceID] = [ [list1][list2][list3] ]
 def readCSV(fileName):
@@ -82,7 +87,8 @@ def reduceWorkflow(initList, TESTCASE_PACKAGE_NAME):
             [order, structtype, method1, method2, m1_para, m2_para, className1, className2, m1_return, m2_return] = eachList
             #OPTION:
             #if isNotDel(method2, className2, TESTCASE_PACKAGE_NAME):
-            if isNotDel(method1, className1, TESTCASE_PACKAGE_NAME):
+            if isNotDel(method1, className1, TESTCASE_PACKAGE_NAME, order):
+                print 'HERE'
                 isDel = False
                 #OPTION:
                 #oneStr = method2

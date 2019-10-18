@@ -1,3 +1,4 @@
+traceID,order,structtype,method1,method2,m1_para,m2_para,className1,className2,m1_return,m2_return
 0,0,null,org.mybatis.jpetstore.web.actions.CatalogActionBean.viewCategory,org.mybatis.jpetstore.service.CatalogService.getProductListByCategory,,java.lang.String,org.mybatis.jpetstore.web.actions.CatalogActionBean,org.mybatis.jpetstore.service.CatalogService,net.sourceforge.stripes.action.ForwardResolution,java.util.List
 0,1,null,org.mybatis.jpetstore.service.CatalogService.getProductListByCategory,org.mybatis.jpetstore.domain.Product.<init>,java.lang.String,,org.mybatis.jpetstore.service.CatalogService,org.mybatis.jpetstore.domain.Product,java.util.List,
 0,2,null,org.mybatis.jpetstore.service.CatalogService.getProductListByCategory,org.mybatis.jpetstore.domain.Product.setProductId,java.lang.String,java.lang.String,org.mybatis.jpetstore.service.CatalogService,org.mybatis.jpetstore.domain.Product,java.util.List,void

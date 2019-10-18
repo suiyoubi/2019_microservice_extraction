@@ -1,17 +1,20 @@
-
 # Representative execution trace extraction
+
 set -x
 PROJECT_NAME=jpetstore
-PROJECT_PACKAGE=org.mybatis.jpetstore
 OUTPUT=./${PROJECT_NAME}_outputs
-EXECUTION_TRACES=./execution_data/${PROJECT_NAME}
-# Workflow and testcase name files are already generated for jpetstore
-WORKFLOW=${EXECUTION_TRACES}/${PROJECT_NAME}_workflow
-TESTCASE_NAME=${EXECUTION_TRACES}/${PROJECT_NAME}_testcase_name
 mkdir $OUTPUT
 
+# Generate workflow.csv for kieker_logs.dat
+PROJECT_PACKAGE=org.mybatis.jpetstore
+WORKFLOW=execution_data/${PROJECT_NAME}/${PROJECT_NAME}_workflow
+
+# Filter the workflow into different tiers: part1 = presentation logs, part2 = service logs, part2 = persistence
+# python workflowFilter.py ${WORKFLOW}.csv ${WORKFLOW}_part1.csv ${WORKFLOW}_part2.csv ${WORKFLOW}_part3.csv ${WORKFLOW}_allparts.csv
+
 # Produce the representative execution trace set
-# python reduceWorkflow.py ${WORKFLOW}.csv ${WORKFLOW}_reduced.csv ${TESTCASE_NAME}.csv   
+TESTCASE_NAME=${OUTPUT}/${PROJECT_NAME}_testcase_name
+python reduceWorkflow.py ${WORKFLOW}.csv ${WORKFLOW}_reduced.csv ${TESTCASE_NAME}.csv   
 
 # Generate a file that holds all the class dependencies, based on the extracted execution traces
 CLASS_DEPS=${OUTPUT}/${PROJECT_NAME}_class_dependencies

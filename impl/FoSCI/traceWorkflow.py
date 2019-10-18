@@ -149,7 +149,7 @@ class KiekerParser:
             #update recordList
             tmp = eachLine.split(";")
             #$6 is OperationExecutionRecord
-            if tmp[0] == '$1':
+            if tmp[0] == '$4':
                 if tmp[3] == '<no-session-id>':
                     tmp[3] = 'nosessionid'
                 else:
@@ -343,12 +343,16 @@ if __name__ == "__main__":
     totalContentList = findAllDataFileContent(datadir)
     myparser = KiekerParser()
     myparser.firstParse(totalContentList, prepackage) #generate recordlist,sessionlist,methodDict,methodList,classDict,classList,timeList
+    print "myparser: "
+    print myparser.recordList
 
     #3 use tracelable to filter out non-duplicated sesionID-traceID-records
     traceLabelDict = dict()
     filteredSessionList = dict()
     for sessionID in myparser.sessionList:
+        print sessionID
         for traceID in myparser.sessionList[sessionID]:
+            print traceID
             recordIDs = myparser.sessionList[sessionID][traceID]  #just ID
             records = list()
             for each in recordIDs:
