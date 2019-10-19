@@ -35,7 +35,7 @@ CTR=${OUTPUT}/${PROJECT_NAME}_ctr
 python groupClassByTrace.py ${TESTCASE}_fv.csv ${TESTCASE}_class.csv ${CTR}.csv
 
 # Initialize functional atoms s.t. Fa = { Ci }
-DIFF=3
+DIFF=0
 ATOMS=${OUTPUT}/${PROJECT_NAME}_atoms
 python functionLogicIdentify.py $CTR.csv $DIFF ${ATOMS}.csv
 

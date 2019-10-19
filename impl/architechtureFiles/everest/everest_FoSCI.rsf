@@ -1,0 +1,12 @@
+contain SS0.ss cart.Cart
+contain SS0.ss CartItem
+contain SS1.ss OrderBean
+contain SS1.ss Order
+contain SS1.ss OrderItem
+contain SS2.ss UzerBean
+contain SS2.ss CatalogItemType
+contain SS2.ss Uzer
+contain SS2.ss UzerItem
+contain SS2.ss CatalogItemBean
+contain SS3.ss Shipping
+contain SS3.ss CatalogItem
