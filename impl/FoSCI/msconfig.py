@@ -15,10 +15,10 @@ class GLOBAL_VAR_OBJECT:
     #the parameter of the algorithm
     POP_SIZE = 20
     PARTITION_K = 3 # number of service candidates
-    PARENT_M = 4
+    PARENT_M = 2 
     FITNESS_METHOD_LIST = ["call coh without weight","call coup without weight","concern coh without weight","concern coup without weight"]
     CROSSOVER_OPERATOR = "1PNC"
-    MUTATION_PROBABILITY = 0.2  #0.01-0.2
+    MUTATION_PROBABILITY = 0.0172877  # 0.04 0.01-0.2
     MUTATION_OPERATOR = "random"
     MAX_ITERATION_LOOP = 200 # previous: 100
     CONTINUE_BEST_LOOP  = 50
