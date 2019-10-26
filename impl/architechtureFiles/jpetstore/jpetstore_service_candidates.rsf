@@ -1,0 +1,16 @@
+contain 0 AccountService
+contain 0 AccountActionBean
+contain 0 Account
+contain 1 CartItem
+contain 1 Cart
+contain 1 CartActionBean
+contain 2 CatalogActionBean
+contain 2 CatalogService
+contain 2 Product
+contain 2 Category
+contain 2 Item
+contain 2 OrderActionBean
+contain 2 Order
+contain 2 OrderService
+contain 2 Sequence
+contain 2 LineItem

@@ -1,0 +1,16 @@
+contain 0.ss Category
+contain 0.ss CategoryService
+contain 0.ss CatalogActionBean
+contain 0.ss Product
+contain 0.ss Item
+contain 0.ss Sequence
+contain 1.ss Order
+contain 1.ss OrderService
+contain 1.ss OrderActionBean
+contain 1.ss LineItem
+contain 2.ss Cart
+contain 2.ss CartActionBean
+contain 2.ss CartItem
+contain 3.ss AccountService
+contain 3.ss AccountActionBean
+contain 3.ss Account
