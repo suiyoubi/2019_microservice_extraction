@@ -14,7 +14,7 @@ import csv
 
 def classDependencyCSVtoMDG(csvFilename):
     dependencies = list()
-    with open(csvFilename, 'r', newline="") as csvFile: 
+    with open(csvFilename, 'r') as csvFile: 
         lines = csv.reader(csvFile, delimiter = ',')
         for line in lines:
             [ callerClass, calleeClass, weight, numFromRefs, numToRefs ] = line
@@ -25,7 +25,7 @@ def classDependencyCSVtoMDG(csvFilename):
             dependencies.append([callerClass,calleeClass,weight])
 
     mdgFilename = csvFilename.replace('.csv', '') + '.mdg'
-    with open(mdgFilename, 'w', newline = "") as mdgFile:
+    with open(mdgFilename, 'w') as mdgFile:
         mdgFile = csv.writer(mdgFile, delimiter=' ')
         mdgFile.writerows(dependencies)
 

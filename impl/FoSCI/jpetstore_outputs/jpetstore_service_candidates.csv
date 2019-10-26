@@ -1,0 +1,16 @@
+contain,0,org.mybatis.jpetstore.service.AccountService
+contain,0,org.mybatis.jpetstore.web.actions.AccountActionBean
+contain,0,org.mybatis.jpetstore.domain.Account
+contain,1,org.mybatis.jpetstore.domain.CartItem
+contain,1,org.mybatis.jpetstore.domain.Cart
+contain,1,org.mybatis.jpetstore.web.actions.CartActionBean
+contain,2,org.mybatis.jpetstore.web.actions.CatalogActionBean
+contain,2,org.mybatis.jpetstore.service.CatalogService
+contain,2,org.mybatis.jpetstore.domain.Product
+contain,2,org.mybatis.jpetstore.domain.Category
+contain,2,org.mybatis.jpetstore.domain.Item
+contain,2,org.mybatis.jpetstore.web.actions.OrderActionBean
+contain,2,org.mybatis.jpetstore.domain.Order
+contain,2,org.mybatis.jpetstore.service.OrderService
+contain,2,org.mybatis.jpetstore.domain.Sequence
+contain,2,org.mybatis.jpetstore.domain.LineItem

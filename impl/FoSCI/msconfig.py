@@ -14,7 +14,7 @@ class GLOBAL_VAR_OBJECT:
 
     #the parameter of the algorithm
     POP_SIZE = 20
-    PARTITION_K = 4 # number of service candidates
+    PARTITION_K = 3 # number of service candidates
     PARENT_M = 4
     FITNESS_METHOD_LIST = ["call coh without weight","call coup without weight","concern coh without weight","concern coup without weight"]
     CROSSOVER_OPERATOR = "1PNC"
@@ -22,7 +22,7 @@ class GLOBAL_VAR_OBJECT:
     MUTATION_OPERATOR = "random"
     MAX_ITERATION_LOOP = 200 # previous: 100
     CONTINUE_BEST_LOOP  = 50
-    REPEAT_TIMES = 1
+    REPEAT_TIMES = 10
     CURRENT_CONTINUE_BEST_LOOP = 0
     current_knee_point = list()
 

@@ -25,7 +25,7 @@ def bunchToRSF(filename):
                 entity = entity.replace('\n','')
                 entityRelations.append('contain ' + clusterName + ' ' + entity)
 
-    rsfFilename = '../bunchRSFs/' + filename.replace('.bunch', '') + '.rsf'
+    rsfFilename = filename.replace('.bunch', '') + '.rsf'
     print(entityRelations)
     # write the cluster relationships into the rsf file
     with open(rsfFilename, 'w') as rsfFile:
