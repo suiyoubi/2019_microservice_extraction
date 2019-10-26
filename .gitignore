@@ -1,5 +1,5 @@
 # FoSCI's Generated Output Files
-benchmarks/FoSCI/*_outputs*
+benchmarks/FoSCI/*outputs*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
