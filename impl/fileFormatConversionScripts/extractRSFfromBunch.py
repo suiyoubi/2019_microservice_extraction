@@ -23,6 +23,8 @@ def bunchToRSF(filename):
             entities = entities.split(', ')
             for entity in entities:
                 entity = entity.replace('\n','')
+                entity = entity.split('.')[-1]
+                print(entity)
                 entityRelations.append('contain ' + clusterName + ' ' + entity)
 
     rsfFilename = filename.replace('.bunch', '') + '.rsf'
